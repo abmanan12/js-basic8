@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_12</title>
+</head>
+
+<style>
+    h2{
+        text-align: center;
+    }
+    .bdr{
+        border: 1px solid black;
+        width: 50%;
+        margin: 0 25%;
+        padding: 16px;
+        text-align: center;
+    }
+</style>
+
+<script>
+    function checkaddress() {
+        event.preventDefault();
+
+        let email = document.getElementById("email_field").value;
+
+        if(!email) {
+            alert("Email address required.")
+        }
+        else{
+            document.getElementById("result").innerHTML = email
+        }
+
+    }
+</script>
+
+<body>
+    
+    <section>
+
+        <h2>Javascript Chapter 49</h2>
+        <h2>Reading field values</h2>
+        <hr>
+
+    </section>
+
+<section>
+
+    <h2>Demo</h2>
+
+    <div class="bdr">
+        <form action="" onsubmit="checkaddress()">
+            Email: <input type="email" name="" id="email_field" required>
+            <button type="submit">submit</button>
+        </form>
+    </div>
+
+</section>
+
+<section>
+
+    <h2>Output</h2>
+    <div id="result" class="bdr"></div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_12</title>
+</head>
+
+<style>
+    h2 {
+        text-align: center;
+    }
+
+    .bdr {
+        border: 1px solid black;
+        width: 50%;
+        margin: 0 25%;
+        padding: 16px;
+        text-align: center;
+    }
+    .title{
+        color: blue;
+    }
+    .big{
+        font-size: 3em;
+    }
+    .hidden{
+        /* display: none; */
+        visibility: hidden;
+    }
+    img{
+        width: 50%;
+    }
+    
+</style>
+
+<script>
+
+    function makebig() {
+        // document.getElementById("title").className = "big"
+        document.getElementById("title").className += " big"
+    }
+
+    function makeinvisible() {
+        document.getElementById("fruit").className = "hidden" 
+    }   
+
+   </script>
+
+<body>
+
+    <section>
+
+        <h2>Javascript Chapter 52</h2>
+        <h2>Manipulating images and text</h2>
+        <hr>
+    </section>
+
+    <section>
+
+        <h2>Demo</h2>
+
+        <div class="bdr" id="result">
+            <h2 onclick="makebig()" class="title" id="title">This is an Apple</h2>
+            <img src="./Assets/Images/apple.jpeg" onclick="makeinvisible()" id="fruit" alt="">
+        </div>
+
+    </section>
+
+</body>
+
+</html>

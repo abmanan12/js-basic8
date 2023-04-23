@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_12</title>
+</head>
+
+<style>
+    h2,
+    .cntr {
+        text-align: center;
+    }
+
+    .bdr {
+        border: 1px solid black;
+        width: 30%;
+        margin: 0 35%;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .btn {
+        margin: 16px;
+    }
+</style>
+
+<script>
+    function headings() {
+        event.preventDefault();
+
+        // document.getElementById("hd").style.visibility = "hidden"
+
+        let par = document.getElementsByTagName("p")
+
+        for (var i = 0; i < par.length; i++) {
+            // par[i].style.visibility = "hidden"
+             par[i].style.color = "red"
+            par[i].style.fontSize = "2em"
+        }
+    }
+
+    function pic() {
+        // document.getElementById("img").style.visibility = "hidden"
+        document.getElementById("img").style.width = "50%"
+        document.getElementById("img").style.margin = "50px 50px"
+
+    }
+
+</script>
+
+<body>
+
+    <section>
+
+        <h2>Javascript Chapters 55 - 57</h2>
+        <h2>Setting Styles | Target all elements by Tag name | Target some elemens by tag name</h2>
+        <hr>
+
+    </section>
+
+    <section class="ctnr">
+
+        <h2>Demo</h2>
+
+        <div class="cntr bdr" id="hd">
+
+            <p>This is 1st Headings</p>
+            <p>This is 2nd Headings</p>
+            <p>This is 3rd Headings</p>
+            <p>This is 4th Headings</p>
+
+        </div>
+
+        <div class="cntr btn">
+            <button onclick="headings()">Headings</button>
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="cntr bdr">
+
+            <img id="img" src="/Assets/Images/apple.jpeg" width="90%" alt="">
+
+        </div>
+
+        <div class="cntr btn">
+            <button onclick="pic()">Image</button>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

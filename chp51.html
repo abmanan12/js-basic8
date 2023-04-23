@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_12</title>
+</head>
+
+<style>
+    h2 {
+        text-align: center;
+    }
+
+    .bdr {
+        border: 1px solid black;
+        width: 50%;
+        margin: 0 25%;
+        padding: 16px;
+        text-align: center;
+    }
+</style>
+
+<script>
+
+    function expand() {
+        var expandParagraph = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minus repudiandae esse rem deleniti culpa placeat animi consequuntur? Aut sapiente odio debitis blanditiis expedita, similique commodi architecto pariatur laboriosam culpa? <a href= 'Javascript:void(0);' onclick= 'reduce()'><em>Click for less</em></a>"
+        document.getElementById("paragraph").innerHTML = expandParagraph;
+    }
+
+    function reduce() {
+        var expandParagraph = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minus repudiandae <a href= 'Javascript:void(0);' onclick= 'expand()'><em>Click for more</em></a>"
+        document.getElementById("paragraph").innerHTML = expandParagraph;
+    }
+
+</script>
+
+<body>
+
+    <section>
+
+        <h2>Javascript Chapter 51</h2>
+        <h2>Reading and setting paragraph text</h2>
+        <hr>
+
+    </section>
+
+    <section>
+
+        <h2>Demo</h2>
+
+        <div class="bdr">
+            <p id="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minus repudiandae
+                <a href="Javascript:void(0);" onclick="expand()"><em>Click for more</em></a> 
+            </p>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

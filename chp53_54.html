@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_12</title>
+</head>
+
+<style>
+    h2 {
+        text-align: center;
+    }
+
+    .bdr {
+        border: 1px solid black;
+        width: 50%;
+        margin: 0 25%;
+        padding: 16px;
+        text-align: center;
+    }
+    .title{
+        color: blue;
+    }
+    .big{
+        font-size: 3em;
+    }
+    .hidden{
+        display: none;
+    }
+    img{
+        width: 50%;
+    }
+
+</style>
+
+<script>
+
+    function swapImage(elementId, newPic) {
+        document.getElementById(elementId).src = newPic
+    }
+
+    
+
+   </script>
+
+<body>
+
+    <section>
+
+        <h2>Javascript Chapters 53 - 54</h2>
+        <h2>Swapping images and Setting Classes</h2>
+        <hr>
+
+    </section>
+
+    <section>
+
+        <h2>Demo</h2>
+
+        <div class="bdr" id="result">
+            <img id="myImage1" src = "./Assets/Images/apple.jpeg" onmouseover = "swapImage(id, './Assets/Images/mango.png');" onmouseout = "swapImage(id, './Assets/Images/apple.jpeg');" >
+            <img id="myImage2" src = "./Assets/Images/mango.png" onmouseover = "swapImage(id, './Assets/Images/apple.jpeg');" onmouseout = "swapImage(id, './Assets/Images/mango.png');" >
+
+        </div>
+    </section>
+        
+</body>
+
+</html>

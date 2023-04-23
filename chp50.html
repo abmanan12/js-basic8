@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_12</title>
+</head>
+
+<style>
+    h2 {
+        text-align: center;
+    }
+
+    .bdr {
+        border: 1px solid black;
+        width: 50%;
+        margin: 0 25%;
+        padding: 16px;
+        text-align: center;
+    }
+</style>
+
+<script>
+    function fillcity() {
+        var cityName;
+        let zip = document.getElementById("zip_field").value;
+
+        switch (zip) {
+            case "38000":
+                cityName = "Faislabad";
+                break;
+            case "54000":
+                cityName = "Lahore";
+                break;
+            case "74000":
+                cityName = "Karachi";
+                break;
+            case "44000":
+                cityName = "Islamabad";
+                break;
+            case "60000":
+                cityName = "Multan";
+                break;
+            case "25000":
+                cityName = "Peshawar";
+                break;
+            case "":
+                cityName = " "
+                break;
+            default:
+                cityName = "Not Valid"
+        }
+        document.getElementById("city_field").value = cityName;
+    }
+
+</script>
+
+<body>
+
+    <section>
+
+        <h2>Javascript Chapter 50</h2>
+        <h2>Setting field values</h2>
+        <hr>
+
+    </section>
+
+    <section>
+
+        <h2>Demo</h2>
+
+        <div class="bdr">
+            <form action="">
+                <label for="">Zip</label> <br>
+                <input type="text" name="" id="zip_field" onblur="fillcity()"><br>
+                <label for="">City</label> <br>
+                <input type="text" name="" id="city_field">
+            </form>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
